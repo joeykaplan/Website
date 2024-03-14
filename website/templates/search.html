@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='search.js') }}"></script>
+
+<script>
+    var results = {{results|tojson }} 
+    console.log(results)
+
+    var input = {{input|tojson }} 
+    console.log(input)
+
+    var blurbs = {{blurbs|tojson }} 
+    console.log(blurbs)
+
+    var price = {{price|tojson }} 
+    console.log(price)
+    
+
+</script>
+
+<div class="container" id="search-input"></div>
+
+<div class="container" id="total-results"></div>
+
+<div class="container" id="results-container"></div>
+
+<div class="container" id="no-results"></div>
+
+
+
+{% endblock %}

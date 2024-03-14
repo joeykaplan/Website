@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='view.js') }}"></script>
+<script>
+    var restaurant = {{restaurant|tojson }} 
+    var restaurants = {{restaurants|tojson }} 
+</script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="n_title">
+                {{restaurant["Name"]}}
+                <a href="/edit/{{ restaurant['Id'] }}" class="edit-link">Edit Restaurant Data</a>
+            </div>
+            <div class="address">
+                Address: {{restaurant["Address"]}} 
+                <br><a href="#">Click here for Map</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="container view-left">
+                <div class="review-text"> 
+                    Review
+                </div>
+                Rating: 
+                <div class="rating" id="star-rating"></div> 
+                <br>
+                <div class="rating"> </div>
+                Price: <div class="rating">{{restaurant["Price Level"]}}</div> <br><br>
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="container"> 
+                    <img src="{{ restaurant["Image"] }}" alt="Image of Restaurant or Food" width="300" height="200">
+                </div>
+            </div>
+            <div class="container blurb">
+                Restaruant Bio: 
+                <br>{{restaurant["Restaurant Blurb"]}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

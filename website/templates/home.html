@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='home.js') }}"></script>
+
+<script>
+    var restaurants = {{restaurants|tojson }} 
+</script>
+
+
+<div class="container">
+    <div class="row center-header">
+        <h2>Kosher Restaurants on the UWS of Manhattan</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="home-blurb">
+                Whether you are planning a business meeting, birthday party, or casual lunch, this is the place to find the right kosher restaurant for you!
+            </div>
+            <div class="restaurant-link" onclick="window.location.href='/view/1'">Holy Shnitzel: delicious chicken sandwiches</div>
+            <div class="restaurant-link" onclick="window.location.href='/view/2'">Noi Due Cafe: upscale affordable dairy cafe</div>
+            <div class="restaurant-link" onclick="window.location.href='/view/3'">Deli Kasbah: fantastic steakhouse with a great ambiance</div>
+        </div>
+        <div class="col-md-6">
+            <img src="https://www.google.com/maps/d/thumbnail?mid=1mmyDVkS-Mea-SHKo4n4bgU-ZIIA&hl=en" class="img-fluid" alt="Map of UWS">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

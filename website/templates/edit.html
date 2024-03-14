@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='edit.js') }}"></script>
+
+<script>
+    var restaurant = {{restaurant|tojson }} 
+</script>
+
+
+
+<div class = "container">
+
+    <div class = "row">
+        <div class = "col-md-12 add-head text-center">
+            Edit Data for Restaurant:
+        </div>
+    </div>
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Restaurant Name 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-name" value="{{restaurant["Name"]}}">
+        </div>
+        <div class = "col-md-2">
+            Restaurant Address 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-addr" value="{{ restaurant['Address'] }}">
+        </div>
+    </div>
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Price Level 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-price" value="{{ restaurant['Price Level'] }}"">
+        </div>
+        <div class = "col-md-2">
+            Image Link 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-pict" value="{{ restaurant['Image'] }}">
+        </div>
+    </div>
+
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Popular item menu 1 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-menu1" value="{{ restaurant['Popular Menu Items'][0] }}">
+        </div>
+        <div class = "col-md-2">
+            Popular item menu 2
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-menu2" value="{{ restaurant['Popular Menu Items'][1] }}">
+        </div>
+    </div>
+
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Rating (from 1 to 5)
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-rating" value="{{ restaurant['Rating']}}">
+        </div>
+        <div class = "col-md-2">
+            Short 75 Char Blurb
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-blurb" value="{{ restaurant['Restaurant Blurb'] }}">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button id="submitBtn" class="nice-button">Submit</button>
+            <button id="discardBtn" class="light-button">Discard</button>
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+{% endblock %}

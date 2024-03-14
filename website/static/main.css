@@ -1,0 +1,190 @@
+.title {
+    font-size: 40px; 
+    padding-left: 400px;
+}
+
+.nav
+
+.ui-widget-header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100%; 
+}
+
+.blurb-link {
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px; 
+  margin-bottom: 20px;
+}
+
+.n_title{
+  font-weight: bold;
+  font-size: 50px; 
+  text-align: center;
+  padding-left: 65px;
+  
+}
+.address{
+  margin-bottom: 30px; 
+  font-weight: light;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.blurb{
+  margin-top: 20px;
+}
+
+.view-left{
+  font-size: 16px;
+  margin-left: 200px;
+}
+
+.review-text{
+  padding-left: 70px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.rating{
+  display: inline;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.restaurant-link {
+  margin-top: 20px;
+  font-size: 24px; 
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.center-header {
+  justify-content: center;
+}
+
+.restaurant-item{
+  cursor: pointer;
+}
+
+.home-blurb{
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: lighter;
+}
+
+.add-head{
+  font-size: 24px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.add-fields{
+  margin-bottom: 30px;
+}
+
+.nice-button {
+  background-color: #800020; /* Nice green color */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.nice-button-small {
+  background-color: #800020 ; /* Nice green color */
+  border: none;
+  color: white;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.nice-button:hover {
+  background-color:  #bb0331; /* Slightly darker green on hover */
+}
+
+.nice-button-small:hover {
+  background-color:  #bb0331; /* Slightly darker green on hover */
+}
+
+.edit-link {
+  float: right; /* Aligns the link to the right */
+  margin-top: 10px; /* Adjust the top margin as needed */
+  font-size: 10px;
+  color: rgb(172, 171, 171);
+}
+
+.add-red:hover{
+  color: #bb0331;
+}
+
+.edit-link:hover{
+  color: #bb0331;
+}
+
+
+
+.light-button {
+  background-color: #c8c8c8; /* Nice green color */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.light-button:hover {
+  background-color: rgb(96, 95, 95);
+  
+}
+
+.container_home {
+  background-color: #F5F5DC; 
+  min-height: 650px;
+}
+
+.bottom{
+  background-color: #c8c8c8; 
+  padding: 20px;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%; /* Full width */
+  min-height: 250px;
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+.coordinatesDisplay{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.namedisplay{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}

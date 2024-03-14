@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='add.js') }}"></script>
+
+
+
+<div class = "container">
+
+    <div class="row">
+        <div class="col-md-12 text-center" id="successMessage" style="display: none;">
+            Restaurant added successfully! <a id="viewRestaurantLink" href="#">View</a>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class = "col-md-12 add-head text-center">
+            Input Data for New Restaurant:
+        </div>
+    </div>
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Restaurant Name 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-name">
+        </div>
+        <div class = "col-md-2">
+            Restaurant Address 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-addr">
+        </div>
+    </div>
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Price Level 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-price">
+        </div>
+        <div class = "col-md-2">
+            Image Link 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-pict">
+        </div>
+    </div>
+
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Popular item menu 1 
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-menu1">
+        </div>
+        <div class = "col-md-2">
+            Popular item menu 2
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-menu2">
+        </div>
+    </div>
+
+    <div class ="row add-fields">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-2">
+            Rating (from 1 to 5)
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-rating">
+        </div>
+        <div class = "col-md-2">
+            Short 75 Char Blurb
+        </div>
+        <div clas="col-md-2">
+            <input type="text" id="rest-blurb">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class = "col-md-12 text-center">
+            <button id="addRestbutton" class="nice-button">Add Restaurant</button>
+        </div>
+    </div>
+
+    
+</div>
+
+{% endblock %}
