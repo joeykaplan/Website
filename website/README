@@ -1,0 +1,5 @@
+In order to run this, create a virtual environment and install flask. 
+
+Then run python server.py and paste the url in a new tab. 
+
+In order to use the google maps API, you must create your own API_KEY using google cloud console. 
